@@ -22,12 +22,30 @@ title: API Docs
 
 				{% if doc.parameters and doc.parameters[0].name %}
 						<h6>Parameters</h6>
-						<dl>
-								{% for parameter in doc.parameters %}
-										<dt>{{ parameter.name }}</dt>
-										<dd>{{ parameter.content }}</dd>
-								{% endfor %}
-						</dl>
+						<table>
+  						<thead>
+  						  <tr>
+    						  <th>参数</th>
+    						  <th>类型</th>
+    						  <th>是否必须</th>
+    						  <th>默认值</th>
+    						  <th>描述</th>
+    						  <th>范围</th>
+  						  </tr>
+  						</thead>
+  						<tbody>
+  								{% for parameter in doc.parameters %}
+  								<tr>
+  									<td>{{ parameter.name }}</td>
+  									<td>{{ parameter.type }}</td>
+  									<td>{{ parameter.mandatory }}</td>
+  									<td>{{ parameter.default }}</td>
+  									<td>{{ parameter.description }}</td>
+  									<td>{{ parameter.ranges }}</td>
+  								</tr>
+  								{% endfor %}
+  						</tbody>
+						</table>
 				{% endif %}
 
 				{{ doc.content_markdown | markdownify | replace: "<dl>", "<h6>Parameters</h6><dl>" }}

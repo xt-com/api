@@ -17,9 +17,15 @@ collections:
   documentation:
     title: Documentation
     position_number: 1
-  api:
-    title: APIs
+  quotes:
+    title: 行情数据
     position_number: 2
+  trade:
+    title: 交易 API
+    position_number: 3
+  websocket:
+    title: WEBSOCKET
+    position_number: 4
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
@@ -41,10 +47,19 @@ defaults:
       _hide_content: true
   -
     scope:
-      type: "api"
+      type: "quotes"
     values:
       _hide_content: true
-
+  -
+    scope:
+      type: "trade"
+    values:
+      _hide_content: true
+  -
+    scope:
+      type: "websocket"
+    values:
+      _hide_content: true
 # -----------
 # CloudCannon
 
