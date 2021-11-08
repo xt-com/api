@@ -1,58 +1,19 @@
-# Aviator
+## XT API
 
-API documentation template for Jekyll. Browse through a [live demo](https://tangerine-lemon.cloudvent.net/).
-Start documenting your API with this configurable theme.
+Welcome to the XT API! You can use the API to access market data, trade and manage your account.
 
-![Aviator template screenshot](images/_screenshot.png)
+XT provides API flexibility to help users integrate XT trading features into their applications quickly and efficiently.
 
-Aviator was made by [CloudCannon](http://cloudcannon.com/), the Cloud CMS for Jekyll.
+XT supports both Rest API and WebSocket API.
 
-Find more templates, themes and step-by-step Jekyll tutorials at [CloudCannon Academy](https://learn.cloudcannon.com/).
+We strongly recommend you to use Rest API in performing trading activities or making withdrawals and keep up-to-date with live market data and depth by WebSocket API.
 
-[![Deploy to CloudCannon](https://buttons.cloudcannon.com/deploy.svg)](https://app.cloudcannon.com/register#sites/connect/github/CloudCannon/aviator-jekyll-template)
+##
 
-## Features
+欢迎使用XT API！ 你可以使用 API 获得市场行情数据，进行交易，并且管理你的账户。
 
-* Three column layout
-* Fully responsive
-* Full text search
-* Pre-styled components
-* Auto-generated navigation based on category
-* Optimised for editing in [CloudCannon](http://cloudcannon.com/)
-* SEO tags
-* Google Analytics
+XT提供了灵活的 API 皆在帮助用户快速、高效的将XT交易功能整合到自己的应用当中。
 
-## Setup
+XT 同时支持 Rest API 与 WebSocket API。
 
-1. Add your site and author details in `_config.yml`.
-2. Get a workflow going to see your site's output (with [CloudCannon](https://app.cloudcannon.com/) or Jekyll locally).
-
-## Develop
-
-Aviator was built with [Jekyll](http://jekyllrb.com/) version 3.7.2, but should support newer versions as well.
-
-Install the dependencies with [Bundler](http://bundler.io/):
-
-~~~bash
-$ bundle install
-~~~
-
-Run `jekyll` commands through Bundler to ensure you're using the right versions:
-
-~~~bash
-$ bundle exec jekyll serve
-~~~
-
-## Editing
-
-Aviator is already optimised for adding, updating and removing documentation pages in CloudCannon.
-
-### Usage
-
-* Each section is a different collection, this helps organise your content.
-* Set the order of the collections with the position_number field in collection configuration in `_config.yml`.
-* Set the order of the documents inside a collection by setting the position_number in front matter.
-
-### Search
-
-* Add `excluded_in_search: true` to any documentation page's front matter to exclude that page in the search results.
+建议开发者进行币币交易或者资产提现等功能时使用 Rest API，获取市场行情和买卖深度等信息使用 WebSocket API。
