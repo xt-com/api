@@ -13,11 +13,11 @@ $space: 20px;
 
 $mobile-break: 700px;
 
-{% if site.baseurl % }
+{% if site.baseurl %}
 	$base-url: {{ site.baseurl }};
-{% else % }
+{% else %}
 	$base-url: '';
-{% endif % }
+{% endif %}
 
 @import "mixins";
 @import "main";
