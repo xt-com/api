@@ -3,10 +3,10 @@
 
 title: Aviator
 description: Jekyll template for API documentation.
-url: https://doc.xt.com/
+url: https://doc.xt.com
 google_analytics_key:
 permalink: pretty
-baseurl: /api
+baseurl: https://doc.xt.com
 
 # -----
 # Build
