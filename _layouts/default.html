@@ -32,16 +32,46 @@
 				<input type="text" name="q" id="search-input" placeholder="Search">
 				<input type="submit" value="Search" style="display: none;">
 			</form>
-
-			{% include sidebar.html %}
+            <div id="sidebar_en">{% include sidebar_en.html %}</div>
+            <div id="sidebar_cn">{% include sidebar_cn.html %}</div>
 		</header>
 		<div class="main">
-			{{ content }}
+			<div style="height: 30px; width: 100%">
+                <div class="i18nButton" id="cn">简体中文</div>
+				<div class="i18nButton" id="en">english</div>
+			</div>
+            <div id="content">
+			    {{ content }}
+            </div>
 		</div>
 		<script>
 			document.getElementById("open-nav").addEventListener("click", function () {
 				document.body.classList.toggle("nav-open");
 			});
-		</script>
+
+            $("#index_cn").hide();
+            $("#en").hide();
+            $("#sidebar_cn").hide();
+
+			$("#cn").click(function () {
+                window.lang = "cn";
+                $("#en").show();
+                $("#cn").hide();
+                $("#sidebar_cn").show();
+                $("#sidebar_en").hide();
+                $("#index_cn").show();
+                $("#index_en").hide();
+            })
+
+            $("#en").click(function () {
+                window.lang = "en";
+                $("#cn").show();
+                $("#en").hide();
+                $("#sidebar_en").show();
+                $("#sidebar_cn").hide();
+                $("#index_en").show();
+                $("#index_cn").hide();
+            })
+        </script>
 	</body>
 </html>

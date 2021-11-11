@@ -18,14 +18,26 @@ collections:
     title: Documentation
     position_number: 1
   quotes:
-    title: 行情数据
+    title: Market data
     position_number: 2
   trade:
-    title: 交易 API
+    title: Trading API
     position_number: 3
   websocket:
     title: WEBSOCKET
     position_number: 4
+  documentation_cn:
+    title: 介绍
+    position_number: 5
+  quotes_cn:
+    title: 行情数据
+    position_number: 6
+  trade_cn:
+    title: 交易API
+    position_number: 7
+  websocket_cn:
+    title: WEBSOCKET
+    position_number: 8
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
@@ -60,6 +72,26 @@ defaults:
       type: "websocket"
     values:
       _hide_content: true
+  -
+    scope:
+      type: "documentation_cn"
+    values:
+      _hide_content: true
+  -
+    scope:
+      type: "quotes_cn"
+    values:
+      _hide_content: true
+  -
+    scope:
+      type: "trade_cn"
+    values:
+      _hide_content: true
+  -
+    scope:
+      type: "websocket_cn"
+    values:
+      _hide_content: true
 # -----------
 # CloudCannon
 
@@ -92,3 +124,7 @@ _options:
     image: true
     table: true
     styles: /css/editor.css
+
+i18n:
+  cn: cn
+  en: en

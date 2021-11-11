@@ -1,5 +1,5 @@
 ---
-title: 最近市场成交记录
+title: Latest Market transactions record
 position_number: 1.6
 type: get
 description: /data/api/v1/getTrades
@@ -9,7 +9,7 @@ parameters:
         type: string
         mandatory: true
         default: N/A
-        description: 交易市场
+        description: Market pair
         ranges: btc_usdt, eth_usdt...
 content_markdown:
 left_code_blocks:
@@ -17,9 +17,15 @@ left_code_blocks:
         code_block: "public void getTrades() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/v1/getTrades?market=btc_usdt\");\r\n\tSystem.out.println(text);\r\n}"
         title: Java
         language: java
+    -
+        code_block: |-
+            def get_trades(self, kwargs):
+                return super(PublicRequestAPI, self).get_trades('GET',Api.get_trades,kwargs)
+        title: Python
+        language: python
 right_code_blocks:
     -
-        code_block: "[\r\n  [\r\n    1562924059762,      //时间戳\r\n    11613.18,           //成交价\r\n    0.044448,           //成交量\r\n    \"bid\",              //交易类型 [bid:买 ask：卖]\r\n    156292405956105     //记录ID\r\n  ],\r\n  [\r\n    1562924059006,\r\n    11613.22,\r\n    0.000086,\r\n    \"ask\",\r\n    156292405956104\r\n  ]\r\n  ...\r\n]\r\n"
+        code_block: "// [Timestamp, deal price, volume, Transaction type, Record ID]\r\n[\r\n  [\r\n    1562924059762,\r\n    11613.18,\r\n    0.044448,\r\n    \"bid\",\r\n    156292405956105\r\n  ],\r\n  [\r\n    1562924059006,      // Timestamp\r\n    11613.22,           // Turnover\r\n    0.000086,           // Volume\r\n    \"bid\",              // Trading type [bid:buy ask：sell]\r\n    156292405956104     // Record ID\r\n  ]\r\n]"
         title: Response
         language: json
 ---

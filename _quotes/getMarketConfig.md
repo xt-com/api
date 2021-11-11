@@ -1,5 +1,5 @@
 ---
-title: 交易市场配置
+title: Trading market configuration
 position_number: 1.1
 type: get
 description: /data/api/v1/getMarketConfig
@@ -11,8 +11,11 @@ left_code_blocks:
   - code_block: "public void getMarketConfig() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/v1/getMarketConfig\");\r\n\tSystem.out.println(text);\r\n}"
     title: Java
     language: java
+  - code_block: "def get_all_market_config(self):\r\n    return super(PublicRequestAPI, self).get_all_market_config('GET',Api.get_market_config, {})"
+    title: Python
+    language: python
 right_code_blocks:
-  - code_block: "{\r\n  \"ltc_usdt\": {\r\n    \"minAmount\": 0.00010,       // 最小下单数量\r\n    \"minMoney\": 5,       \t// 最小下单金额\r\n    \"pricePoint\": 2,            // 价格小数点(价格精度，不能大于此精度)\r\n    \"coinPoint\": 4,             // 数量小数点(数量精度，不能大于此精度)\r\n    \"maker\": 0.00100000,        // 主动单交易手续费\r\n    \"taker\": 0.00100000         // 被动单交易手续费\r\n  }\r\n  \"eth_usdt\": {\r\n    \"minAmount\": 0.00010,\r\n    \"pricePoint\": 2,\r\n    \"coinPoint\": 4,\r\n    \"maker\": 0.00100000,\r\n    \"taker\": 0.00100000\r\n  },\r\n  \"btc_usdt\": {\r\n    \"minAmount\": 0.0000010,\r\n    \"pricePoint\": 2,\r\n    \"coinPoint\": 6,\r\n    \"maker\": 0.00100000,\r\n    \"taker\": 0.00100000\r\n  }\r\n  ...\r\n}"
+  - code_block: "{\n  \"ltc_usdt\": {\n    \"minAmount\": 0.00010,       // minimum order quantity\n    \"minMoney\": 5,       \t      // minimum order money\n    \"pricePoint\": 2,            // price decimal point\n    \"coinPoint\": 4,             // number decimal point\n    \"maker\": 0.00100000,        // Active transaction fee\n    \"taker\": 0.00100000         // Passive transaction fee\n  }\n  \"eth_usdt\": {\n    \"minAmount\": 0.00010,\n    \"pricePoint\": 2,\n    \"coinPoint\": 4,\n    \"maker\": 0.00100000,\n    \"taker\": 0.00100000\n  },\n  \"btc_usdt\": {\n    \"minAmount\": 0.0000010,\n    \"pricePoint\": 2,\n    \"coinPoint\": 6,\n    \"maker\": 0.00100000,\n    \"taker\": 0.00100000\n  }\n  ...\n}"
     title: Response
     language: json
 ---
