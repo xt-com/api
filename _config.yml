@@ -1,8 +1,8 @@
 # ----
 # Site
 
-title: Aviator
-description: Jekyll template for API documentation.
+title: XT DOC
+description: XT Interface documentation.
 url: https://doc.xt.com
 google_analytics_key:
 permalink: pretty
@@ -15,7 +15,7 @@ timezone: Etc/UTC
 
 collections:
   documentation:
-    title: Documentation
+    title: Access Description
     position_number: 1
   quotes:
     title: Market data
@@ -27,7 +27,7 @@ collections:
     title: WEBSOCKET
     position_number: 4
   documentation_cn:
-    title: 介绍
+    title: 接入说明
     position_number: 5
   quotes_cn:
     title: 行情数据
@@ -124,7 +124,3 @@ _options:
     image: true
     table: true
     styles: /css/editor.css
-
-i18n:
-  cn: cn
-  en: en
