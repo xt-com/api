@@ -25,7 +25,24 @@ left_code_blocks:
         language: python
 right_code_blocks:
     -
-        code_block: "// [Timestamp, deal price, volume, Transaction type, Record ID]\r\n[\r\n  [\r\n    1562924059762,\r\n    11613.18,\r\n    0.044448,\r\n    \"bid\",\r\n    156292405956105\r\n  ],\r\n  [\r\n    1562924059006,      // Timestamp\r\n    11613.22,           // Turnover\r\n    0.000086,           // Volume\r\n    \"bid\",              // Trading type [bid:buy ask：sell]\r\n    156292405956104     // Record ID\r\n  ]\r\n]"
+        code_block: |-
+            // [Timestamp, deal price, volume, Transaction type, Record ID]
+            [
+                [
+                    1562924059762,
+                    11613.18,
+                    0.044448,
+                    "bid",
+                    156292405956105
+                ],
+                [
+                    1562924059006,
+                    11613.22,
+                    0.000086,
+                    "bid",
+                    156292405956104
+                ]
+            ]
         title: Response
         language: json
 ---
