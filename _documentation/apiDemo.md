@@ -14,8 +14,7 @@ content_markdown: >-
   [https://github.com/xt-com/xt-com-java-demo](https://github.com/xt-com/xt-com-java-demo)
   
 
-
-
+  <br/>
   Python connector
 
 
@@ -23,10 +22,9 @@ content_markdown: >-
   
 
   [https://github.com/xt-com/xt-com-python-demo](https://github.com/xt-com/xt-com-python-demo)
-  
 
 
-
+  <br/>
   NodeJs connector
 
 
