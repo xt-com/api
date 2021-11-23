@@ -7,7 +7,7 @@ parameters:
     -
         name:
         content:
-content_markdown: Note: This method does not require a signature.
+content_markdown: Note：This method does not require a signature.
 left_code_blocks:
     -
         code_block: "public void getTickers() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/v1/getTickers\");\r\n\tSystem.out.println(text);\r\n}"
