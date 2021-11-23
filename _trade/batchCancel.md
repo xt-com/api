@@ -41,7 +41,7 @@ content_markdown: |-
   
     Please note that data is not involved in signing the JSON data itself, but STRING after Base64.decode ()
 
-    Note：The API interface needs to open transaction permissions.
+    Note：**The API interface needs to open transaction permissions.**
 
 left_code_blocks:
 -
