@@ -11,7 +11,7 @@ parameters:
     default:
     description:
     ranges:
-content_markdown: Note: This method does not require a signature.   
+content_markdown: Note：This method does not require a signature.   
 left_code_blocks:
 -
     code_block:
