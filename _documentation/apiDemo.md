@@ -1,5 +1,5 @@
 ---
-title: API code base
+title: API Library
 position_number: 7
 parameters:
 - name:
@@ -25,10 +25,10 @@ content_markdown: >-
 
 
   <br/>
-  NodeJs connector
+  Node.js connector
 
 
-  A lightweight NodeJs code library that provides a method for users to directly call the API
+  A lightweight Node.js code library that provides a method for users to directly call the API
 
 
   [https://github.com/xt-com/xt-com-nodejs-demo](https://github.com/xt-com/xt-com-nodejs-demo)

@@ -25,10 +25,10 @@ content_markdown: >-
 
 
   <br/>
-  NodeJs connector
+  Node.js connector
 
 
-  一个轻量级的NodeJs代码库，提供让用户直接调用API的方法。
+  一个轻量级的Node.js代码库，提供让用户直接调用API的方法。
 
   
   [https://github.com/xt-com/xt-com-nodejs-demo](https://github.com/xt-com/xt-com-nodejs-demo)
