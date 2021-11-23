@@ -40,6 +40,8 @@ content_markdown: |-
     组装完成之后，把JSON数组转为STRING，再进行Base64.encode()才是最终要提交的数据
 
     请注意，data参与签名的不是JSON数据本身，而是Base64.decode()之后的STRING
+
+    注：**此api接口需要开通交易权限**
 left_code_blocks:
 -
     code_block: "public void batchCancel() {\r\n\tMap<String, Object> map = new HashMap<String, Object>();\r\n\tmap.put(\"accesskey\", accessKey);\r\n\tmap.put(\"nonce\", System.currentTimeMillis());\r\n\tmap.put(\"market\", \"btc_usdt\");\r\n\t\r\n\tJSONArray array = new JSONArray();\r\n\tarray.add(\"157154392122493\");\r\n\tarray.add(\"157154392122494\");\r\n\tarray.add(\"157154392122495\");\r\n\tarray.add(\"157154392122496\");\r\n\tarray.add(\"157154392122497\");\r\n\t\r\n\t// put data\r\n\tString data = Base64CoderC.encode(array.toJSONString());\r\n\t\r\n\tmap.put(\"data\", data);\r\n\t\r\n\t// 签名(en:Signature)\r\n\tString signature = HttpUtil.getSignature(map, secretKey);\r\n\tmap.put(\"signature\", signature);\r\n\t// \r\n\tString text = HttpUtil.post(URL + \"/trade/api/v1/batchCancel\", map);\r\n\tSystem.out.println(text);\r\n}"

@@ -11,7 +11,7 @@ parameters:
         default: N/A
         description: Market pair
         ranges: btc_usdt, eth_usdt...
-content_markdown:
+content_markdown: Note: This method does not require a signature.
 left_code_blocks:
     -
         code_block: "public void getDepth() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/v1/getDepth?market=btc_usdt\");\r\n\tSystem.out.println(text);\r\n}"

@@ -46,6 +46,8 @@ content_markdown: |-
     组装完成之后，把JSON数组转为STRING，再进行Base64.encode()才是最终要提交的数据
 
     请注意，data参与签名的不是JSON数据本身，而是Base64.decode()之后的STRING
+    
+    注：**此api接口需要开通交易权限**
 
 left_code_blocks:
 -

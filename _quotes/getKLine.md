@@ -25,7 +25,7 @@ parameters:
         default: 0
         description: Time condition. Control increment
         ranges: The first time is 0, after that follow the value of the since
-content_markdown:
+content_markdown: Note: This method does not require a signature.
 left_code_blocks:
     -
         code_block: "public void getKLine() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/v1/getKLine?market=btc_usdt&type=1min&since=0\");\r\n\tSystem.out.println(text);\r\n}"

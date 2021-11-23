@@ -53,7 +53,7 @@ parameters:
     default: N/A
     description: Order type
     ranges: 0, limit price,1 market price
-content_markdown:
+content_markdown: Note: The API interface needs to open transaction permissions.
 left_code_blocks:
 -
     code_block: "public void order() {\n\tMap<String, Object> map = new HashMap<String, Object>();\n\tmap.put(\"accesskey\", accessKey);\n\tmap.put(\"nonce\", System.currentTimeMillis());\n\tmap.put(\"market\", \"btc_usdt\");\n\tmap.put(\"price\", \"10000\");\n\tmap.put(\"number\", \"1.23\");\n\tmap.put(\"type\", 1);\t\t// 0.sell 1.buy\n\tmap.put(\"entrustType\", 0);\t// 0.Limited price  1.Market price matching\n\t// Signature\n\tString signature = HttpUtil.getSignature(map, secretKey);\n\tmap.put(\"signature\", signature);\n\t// \n\tString text = HttpUtil.post(URL + \"/trade/api/v1/order\", map);\n\tSystem.out.println(text);\n}"

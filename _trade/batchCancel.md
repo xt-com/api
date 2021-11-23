@@ -40,6 +40,8 @@ content_markdown: |-
     After the assembly is completed, the JSON array is converted to STRING, and then Base64.encode () is the final data to be submitted.
   
     Please note that data is not involved in signing the JSON data itself, but STRING after Base64.decode ()
+
+    Note: The API interface needs to open transaction permissions.
 left_code_blocks:
 -
     code_block: "public void batchCancel() {\n\tMap<String, Object> map = new HashMap<String, Object>();\n\tmap.put(\"accesskey\", accessKey);\n\tmap.put(\"nonce\", System.currentTimeMillis());\n\tmap.put(\"market\", \"btc_usdt\");\n\t\n\tJSONArray array = new JSONArray();\n\tarray.add(\"157154392122493\");\n\tarray.add(\"157154392122494\");\n\tarray.add(\"157154392122495\");\n\tarray.add(\"157154392122496\");\n\tarray.add(\"157154392122497\");\n\t\n\t// put data\n\tString data = Base64CoderC.encode(array.toJSONString());\n\t\n\tmap.put(\"data\", data);\n\t\n\t// Signature\n\tString signature = HttpUtil.getSignature(map, secretKey);\n\tmap.put(\"signature\", signature);\n\t// \n\tString text = HttpUtil.post(URL + \"/trade/api/v1/batchCancel\", map);\n\tSystem.out.println(text);\n}"

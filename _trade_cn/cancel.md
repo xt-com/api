@@ -32,7 +32,7 @@ parameters:
     default: N/A
     description: 订单ID
     ranges:
-content_markdown:
+content_markdown: 注：**此api接口需要开通交易权限**
 left_code_blocks:
 -
     code_block: "public void cancel() {\r\n\tMap<String, Object> map = new HashMap<String, Object>();\r\n\tmap.put(\"accesskey\", accessKey);\r\n\tmap.put(\"nonce\", System.currentTimeMillis());\r\n\tmap.put(\"market\", \"btc_usdt\");\r\n\tmap.put(\"id\", \"156387346384491\");\r\n\t// 签名(en:Signature)\r\n\tString signature = HttpUtil.getSignature(map, secretKey);\r\n\tmap.put(\"signature\", signature);\r\n\t\r\n\tString text = HttpUtil.post(URL + \"/trade/api/v1/cancel\", map);\r\n\tSystem.out.println(text);\r\n}"

@@ -53,7 +53,7 @@ parameters:
     default: N/A
     description: 委托类型
     ranges: 0、限价，1、市价
-content_markdown:
+content_markdown: 注：**此api接口需要开通交易权限**
 left_code_blocks:
 -
     code_block: "public void order() {\r\n\tMap<String, Object> map = new HashMap<String, Object>();\r\n\tmap.put(\"accesskey\", accessKey);\r\n\tmap.put(\"nonce\", System.currentTimeMillis());\r\n\tmap.put(\"market\", \"btc_usdt\");\r\n\tmap.put(\"price\", \"10000\");\r\n\tmap.put(\"number\", \"1.23\");\r\n\tmap.put(\"type\", 1);\t\t// 0.sell 1.buy\r\n\tmap.put(\"entrustType\", 0);\t// 0.Limited price  1.Market price matching\r\n\t// 签名(en:Signature)\r\n\tString signature = HttpUtil.getSignature(map, secretKey);\r\n\tmap.put(\"signature\", signature);\r\n\t// \r\n\tString text = HttpUtil.post(URL + \"/trade/api/v1/order\", map);\r\n\tSystem.out.println(text);\r\n}"

@@ -43,6 +43,8 @@ content_markdown: |-
 
     Please note that data is not involved in signing the JSON data itself, but STRING after Base64.decode ()
 
+    Note: The API interface needs to open transaction permissions.
+
 left_code_blocks:
 -
     code_block: "public void batchOrder() {\n\tMap<String, Object> map = new HashMap<String, Object>();\n\tmap.put(\"accesskey\", accessKey);\n\tmap.put(\"nonce\", System.currentTimeMillis());\n\tmap.put(\"market\", \"btc_usdt\");\n\t\n\tJSONArray array = new JSONArray();\n\tfor(int i = 0; i < 10; i++) {\n\t\tJSONObject bid = new JSONObject();\n\t\tbid.put(\"price\", \"10000.123\");\n\t\tbid.put(\"amount\", \"0.1\");\n\t\tbid.put(\"type\", 1);\n\t\tarray.add(bid);\n\t\tJSONObject ask = new JSONObject();\n\t\task.put(\"price\", \"10001.123\");\n\t\task.put(\"amount\", \"0.1\");\n\t\task.put(\"type\", 0);\n\t\tarray.add(ask);\n\t}\n\t// put data\n\tString data = Base64CoderC.encode(array.toJSONString());\n\t\n\tmap.put(\"data\", data);\n\t\n\t// Signature\n\tString signature = HttpUtil.getSignature(map, secretKey);\n\tmap.put(\"signature\", signature);\n\t// \n\tString text = HttpUtil.post(URL + \"/trade/api/v1/batchOrder\", map);\n\tSystem.out.println(text);\n}"

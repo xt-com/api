@@ -32,7 +32,7 @@ parameters:
     default: N/A
     description: Order ID
     ranges:
-content_markdown:
+content_markdown: Note: The API interface needs to open transaction permissions.
 left_code_blocks:
 -
     code_block: "public void cancel() {\n\tMap<String, Object> map = new HashMap<String, Object>();\n\tmap.put(\"accesskey\", accessKey);\n\tmap.put(\"nonce\", System.currentTimeMillis());\n\tmap.put(\"market\", \"btc_usdt\");\n\tmap.put(\"id\", \"156387346384491\");\n\t// Signature\n\tString signature = HttpUtil.getSignature(map, secretKey);\n\tmap.put(\"signature\", signature);\n\t\n\tString text = HttpUtil.post(URL + \"/trade/api/v1/cancel\", map);\n\tSystem.out.println(text);\n}"
