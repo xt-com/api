@@ -11,7 +11,7 @@ parameters:
     default:
     description:
     ranges:
-content_markdown:
+content_markdown: 注：**此方法不需要签名**
 left_code_blocks:
 -
     code_block: "public void getAccounts() {\r\n\tString text = HttpUtil.get(URL + \"/trade/api/v1/getAccounts\");\r\n\tSystem.out.println(text);\r\n}"

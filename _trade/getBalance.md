@@ -1,5 +1,5 @@
 ---
-title: Get trading (spot) account assets
+title: Get Trading (Spot) Account Assets
 position_number: 2
 type: get
 description: /trade/api/v1/getBalance
@@ -34,5 +34,3 @@ right_code_blocks:
     title: Response
     language: json
 ---
-
-

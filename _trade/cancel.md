@@ -1,5 +1,5 @@
 ---
-title: Cancel an order
+title: Cancel an Order
 position_number: 7
 type: post
 description: /trade/api/v1/cancel

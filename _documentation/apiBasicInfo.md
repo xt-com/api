@@ -1,5 +1,5 @@
 ---
-title: Basic information of the interface
+title: Basic Information of the Interface
 position_number: 2
 parameters:
 - name:
@@ -31,5 +31,3 @@ right_code_blocks:
   title:
   language:
 ---
-
-

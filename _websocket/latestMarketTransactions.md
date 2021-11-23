@@ -1,5 +1,5 @@
 ---
-title: Latest market transactions
+title: Latest Market Transactions
 position_number: 11
 type:
 description:

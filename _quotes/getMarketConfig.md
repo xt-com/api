@@ -1,5 +1,5 @@
 ---
-title: Trading market configuration
+title: Trading Market Configuration
 position_number: 1.1
 type: get
 description: /data/api/v1/getMarketConfig

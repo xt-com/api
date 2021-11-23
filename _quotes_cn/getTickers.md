@@ -7,7 +7,7 @@ parameters:
     -
         name:
         content:
-content_markdown:
+content_markdown: 注：**此方法不需要签名**
 left_code_blocks:
     -
         code_block: "public void getTickers() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/v1/getTickers\");\r\n\tSystem.out.println(text);\r\n}"

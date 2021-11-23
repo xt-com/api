@@ -1,5 +1,5 @@
 ---
-title: Get transaction records
+title: Get Transaction Records
 position_number: 12
 type: get
 description: /trade/api/v1/myTrades

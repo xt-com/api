@@ -11,7 +11,7 @@ parameters:
     default:
     description:
     ranges:
-    content_markdown:
+content_markdown: 注：**此方法不需要签名**
 left_code_blocks:
 -
     code_block:
@@ -23,5 +23,3 @@ right_code_blocks:
     title: Response
     language: json
 ---
-
-

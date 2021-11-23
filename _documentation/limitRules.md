@@ -1,5 +1,5 @@
 ---
-title: Frequency limiting rules
+title: Frequency Limiting Rules
 position_number: 3
 parameters:
 - name:

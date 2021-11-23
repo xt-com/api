@@ -1,5 +1,5 @@
 ---
-title: Kline/Candlestick status
+title: Kline/Candlestick Status
 position_number: 7
 type:
 description:
@@ -53,5 +53,3 @@ right_code_blocks:
   title: Response
   language: json
 ---
-
-

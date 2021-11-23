@@ -1,5 +1,5 @@
 ---
-title: Signing steps
+title: Signing Steps
 position_number: 5
 parameters:
 - name:
@@ -28,7 +28,7 @@ content_markdown: >-
     97b7b71741ca0aec6e0404a5b1c7cb2a78e7bd6c2a8088dbd84a20129dee4fe7
 
 
-    Finally, the signature is assigned to the parameter name signature and submitted to the server. 
+    Finally, the signature is assigned to the parameter name signature and submitted to the server.
 left_code_blocks:
 - code_block:
   title:

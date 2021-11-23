@@ -11,7 +11,7 @@ parameters:
         default: N/A
         description: 交易市场
         ranges: btc_usdt, eth_usdt...
-content_markdown:
+content_markdown: 注：**此方法不需要签名**
 left_code_blocks:
     -
         code_block: "public void getTicker() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/v1/getTicker?market=btc_usdt\");\r\n\tSystem.out.println(text);\r\n}"

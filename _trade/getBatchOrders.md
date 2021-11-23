@@ -1,5 +1,5 @@
 ---
-title: Get a batch of orders information
+title: Get a batch of Orders Information
 position_number: 11
 type: get
 description: /trade/api/v1/getBatchOrders

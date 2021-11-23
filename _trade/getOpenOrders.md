@@ -1,5 +1,5 @@
 ---
-title: Get uncompleted Orders
+title: Get Uncompleted Orders
 position_number: 10
 type: get
 description: /trade/api/v1/getOpenOrders

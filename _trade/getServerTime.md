@@ -1,5 +1,5 @@
 ---
-title: Get server time
+title: Get Server Time
 position_number: 1
 type: get
 description: /trade/api/v1/getServerTime
@@ -23,5 +23,3 @@ right_code_blocks:
     title: Response
     language: json
 ---
-
-

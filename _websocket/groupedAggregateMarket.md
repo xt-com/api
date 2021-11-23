@@ -1,5 +1,5 @@
 ---
-title: Grouped aggregate market
+title: Grouped Aggregate Market
 position_number: 9
 type:
 description:

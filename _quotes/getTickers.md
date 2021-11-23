@@ -1,5 +1,5 @@
 ---
-title: Latest Ticker of all markets
+title: Latest Ticker of all Markets
 position_number: 1.4
 type: get
 description: /data/api/v1/getTickers

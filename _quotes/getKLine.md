@@ -1,5 +1,5 @@
 ---
-title: Kline/Candlestick data
+title: Kline/Candlestick Data
 position_number: 1.2
 type: get
 description: /data/api/v1/getKLine

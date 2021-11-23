@@ -1,5 +1,5 @@
 ---
-title: Data compression
+title: Data Compression
 position_number: 2
 type:
 description:

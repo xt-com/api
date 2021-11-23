@@ -1,5 +1,5 @@
 ---
-title: Place a new order
+title: Place a New Order
 position_number: 5
 type: post
 description: /trade/api/v1/order

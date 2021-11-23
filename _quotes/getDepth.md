@@ -1,5 +1,5 @@
 ---
-title: Market Depth data
+title: Market Depth Data
 position_number: 1.5
 type: get
 description: /data/api/v1/getDepth

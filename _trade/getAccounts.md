@@ -1,5 +1,5 @@
 ---
-title: Get the account type
+title: Get the Account Type
 position_number: 3
 type: get
 description: /trade/api/v1/getAccounts

@@ -1,5 +1,5 @@
 ---
-title: Prompt message
+title: Prompt Message
 position_number: 3
 type:
 description:

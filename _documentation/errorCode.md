@@ -1,5 +1,5 @@
 ---
-title: Error code
+title: Error Code
 position_number: 9
 parameters:
 - name:
@@ -36,5 +36,3 @@ left_code_blocks:
   title:
   language:
 ---
-
-

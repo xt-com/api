@@ -1,5 +1,5 @@
 ---
-title: Order information
+title: Order Information
 position_number: 9
 type: get
 description: /trade/api/v1/getOrder

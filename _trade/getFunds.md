@@ -1,5 +1,5 @@
 ---
-title: Get specific account assets
+title: Get Specific Account Assets
 position_number: 4
 type: get
 description: /trade/api/v1/getFunds

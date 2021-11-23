@@ -1,5 +1,5 @@
 ---
-title: Aggregate market
+title: Aggregate Market
 position_number: 8
 type:
 description:

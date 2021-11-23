@@ -1,5 +1,5 @@
 ---
-title: Latest Market transactions record
+title: Latest Market Transactions Record
 position_number: 1.6
 type: get
 description: /data/api/v1/getTrades

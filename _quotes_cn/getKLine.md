@@ -25,7 +25,7 @@ parameters:
         default: 0
         description: 时间条件，控制增量
         ranges: 第一次为0,之后为响应的since的值即可
-content_markdown:
+content_markdown: 注：**此方法不需要签名**
 left_code_blocks:
     -
         code_block: "public void getKLine() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/v1/getKLine?market=btc_usdt&type=1min&since=0\");\r\n\tSystem.out.println(text);\r\n}"
