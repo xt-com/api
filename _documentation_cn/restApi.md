@@ -11,10 +11,6 @@ content_markdown: |-
     **https://api.xt.com**
     {: .info}
 
-    备用:
-
-    **https://api.xt.pub**
-    {: .info}
 left_code_blocks:
     -
         code_block:

@@ -17,10 +17,6 @@ content_markdown: |-
     **wss://xtsocket.xt.com/websocket**
     {: .info}
 
-    备用:
-
-    **wss://xtsocket.xt.pub/websocket**
-    {: .info}
 left_code_blocks:
 -
     code_block:
@@ -32,5 +28,3 @@ right_code_blocks:
     title:
     language:
 ---
-
-
