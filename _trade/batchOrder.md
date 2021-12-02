@@ -37,13 +37,21 @@ content_markdown: |-
 
     Data is a JSON array. The maximum length of the array is only 100. Anything beyond 100 will be ignored. The format of the array element is as following:
 
-    \{ "price": 1000,&nbsp; "amount": 1, &nbsp;"type" : 1&nbsp; // 1, buy, 0 sell\}
+    ```
+    {
+      "price": 1000,
+      "amount": 1,
+      "type" : 1    // 1, buy, 0 sell
+    }
+    ```
 
     After the assembly is completed, the JSON array is converted to STRING, and then Base64.encode () is the final data to be submitted.
 
     Please note that data is not involved in signing the JSON data itself, but STRING after Base64.decode ()
 
     Note：**The API interface needs to open transaction permissions.**
+
+    **The limit of incomplete orders is 300, and more orders need to be cancelled first and the delegate order can continue to be initiated.**
 
 left_code_blocks:
 -
