@@ -6,7 +6,7 @@ description: XT Interface documentation.
 url: https://doc.xt.com
 google_analytics_key:
 permalink: pretty
-baseurl: 
+baseurl:
 
 # -----
 # Build
@@ -43,8 +43,14 @@ plugins:
   - jekyll-seo-tag
 
 exclude:
-  - readme.md
+  - CNAME
+  - favicon.ico
+  - Gemfile
+  - Gemfile.lock
+  - README.md
   - LICENSE
+  - robots.txt
+
 
 defaults:
   -
