@@ -28,10 +28,10 @@ parameters:
 -
     name: price
     type: float
-    mandatory: true
+    mandatory: false
     default: N/A
     description: Order Price
-    ranges:
+    ranges: Required when order type is limit price
 -
     name: number
     type: float

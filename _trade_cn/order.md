@@ -28,10 +28,10 @@ parameters:
 -
     name: price
     type: float
-    mandatory: true
+    mandatory: false
     default: N/A
     description: 委托价格
-    ranges:
+    ranges: 委托类型是限价时必填
 -
     name: number
     type: float
