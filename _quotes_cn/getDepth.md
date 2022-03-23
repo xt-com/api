@@ -1,6 +1,6 @@
 ---
 title: 市场深度数据
-position_number: 1.5
+position_number: 1.6
 type: get
 description: /data/api/v1/getDepth
 parameters:

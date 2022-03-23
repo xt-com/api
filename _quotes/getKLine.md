@@ -1,6 +1,6 @@
 ---
 title: Kline/Candlestick Data
-position_number: 1.2
+position_number: 1.3
 type: get
 description: /data/api/v1/getKLine
 parameters:

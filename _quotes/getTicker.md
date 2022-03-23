@@ -1,6 +1,6 @@
 ---
 title: Aggregated Markets （Ticker）
-position_number: 1.3
+position_number: 1.4
 type: get
 description: /data/api/v1/getTicker
 parameters:
