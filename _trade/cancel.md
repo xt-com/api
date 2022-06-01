@@ -39,7 +39,7 @@ left_code_blocks:
     title: Java
     language: java
 -
-    code_block: "def test_cancel(self):\r\n    \r\n    accesskey = 'xxxxxxxxxxxxxxxxxxxx'\r\n    secretkey = 'xxxxxxxxxxxxxxxxxxxx'\r\n    sra = SignedRequestAPI(accesskey, secretkey)  \r\n    \r\n    params = {\r\n            'market':'forth_usdt',\r\n            'id':'6823168236830742528'\r\n    }\r\n    \r\n    status, data, _ = sra.palce_order(params)\r\n    \r\n    assert  data.get('code') == 200\r\n    assert data.get('data') is not None\r\n    self.assertTrue(status)\r\n    self.assertTrue(isinstance(data, dict))\r\n    \r\n    print('test cancel >>> ', data)"
+    code_block: "def test_cancel(self):\r\n    \r\n    accesskey = 'xxxxxxxxxxxxxxxxxxxx'\r\n    secretkey = 'xxxxxxxxxxxxxxxxxxxx'\r\n    sra = SignedRequestAPI(accesskey, secretkey)  \r\n    \r\n    params = {\r\n            'market':'forth_usdt',\r\n            'id':'6823168236830742528'\r\n    }\r\n    \r\n    status, data, _ = sra.cancel_order(params)\r\n    \r\n    assert  data.get('code') == 200\r\n    assert data.get('data') is not None\r\n    self.assertTrue(status)\r\n    self.assertTrue(isinstance(data, dict))\r\n    \r\n    print('test cancel >>> ', data)"
     title: Python
     language: python
 right_code_blocks:
